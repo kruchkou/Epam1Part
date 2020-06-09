@@ -7,7 +7,9 @@ public class Task1 {
     }
 
     public static void main(String[] args) {
-        double a = -2, b = 5, c = 2;
+        double a = -2;
+        double b = 5;
+        double c = 2;
         System.out.printf("Result is: %f", getResult(a, b, c));
     }
 }

@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class Task10 {
 
-    private static boolean isRaising = true, hasSameNumsNear = false, isAlternating = true;
+    private static boolean isRaising = true;
+    private static boolean hasSameNumsNear = false;
+    private static boolean isAlternating = true;
     private static int prevNumber = 0;
 
     private static void checkNumber(int number) {
@@ -21,10 +23,11 @@ public class Task10 {
         prevNumber = number;
     }
 
-    public static void main(String[] args) {
+    private static void inputNumbers() {
 
         int number;
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Input numbers by ENTER:");
 
         while (true) {
@@ -35,6 +38,11 @@ public class Task10 {
                 checkNumber(number);
             }
         }
+    }
+
+    public static void main(String[] args) {
+
+        inputNumbers();
 
         System.out.println("Is Raising: " + isRaising);
         System.out.println("Has same nums near: " + hasSameNumsNear);
